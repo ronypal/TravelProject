@@ -44,14 +44,6 @@ public class MainPageEvents extends BaseTest {
     public void moreInfoBtn() {
         int btns = elementFetch.getWebElements("XPATH", MainPageElements.moreInfoBtn).size();
         System.out.println("no of buttons " + btns);
-
-//   //        ListIterator<WebElement> theListOfbtns = elementFetch.getWebElements("CLASS",MainPageElements.moreInfoBtn).listIterator();
-//        int i = 1;
-//        while(theListOfbtns.hasNext()) {
-//            WebElement btnI = elementFetch.getWebElement("CLASS",MainPageElements.button);
-//            btnI.click();
-//        }
-//        elementFetch.getWebElements("CSS",MainPageElements.button).get(3).click();
     }
 
     public void clickOnDayPrices() {
@@ -114,65 +106,8 @@ public class MainPageEvents extends BaseTest {
 //                System.out.println("The index of the selected option is: "+i);
 //                break;
 //            }
-//                for (int i = 0; i < linkSize; i++) {
-//            try {
-//                Wait<WebDriver> fluentWait = new FluentWait<>(driver)
-//                        .ignoring(StaleElementReferenceException.class)
-//                        .withMessage("not found");
-//                WebElement element = fluentWait.until(webDriver -> s);
-//                new WebDriverWait(driver, 20).until(ExpectedConditions.elementToBeClickable(s)).click();
-//                System.out.println("clicked on link");
 //
-//            } catch (Exception e) {
-//                JavascriptExecutor executor = (JavascriptExecutor) driver;
-//                Actions act = new Actions(driver);
-//                act.moveToElement(s);
-//            }
-////            if(linkSize>0){
-//                executor.executeScript("arguments[0].click();", s);
-//                Thread.sleep(2000);
-//            } else {
-//                System.out.println("nothing");
-//            }
-
-//            boolean staleElement = true;
-//            while(staleElement){
-//                try{
-//                    Wait<WebDriver> fluentWait = new FluentWait<>(driver)
-//                        .ignoring(StaleElementReferenceException.class)
-//                .withMessage("not found");
-//        WebElement element = fluentWait.until(webDriver -> s);
-//                    new WebDriverWait(driver, 20).until(ExpectedConditions.elementToBeClickable(element)).click();
-//                    staleElement = false;
 //
-//                } catch(StaleElementReferenceException e){
-//                    staleElement = true;
-//                }
-//            }
-//            int j=1;
-//            while (true) {
-//                WebElementdisplay=s;
-//                System.out.println(WebElementdisplay);
-////                if (WebElementdisplay.isDisplayed()==true)
-//                {
-//                    System.out.println("inside if statement"+j);
-//                    executor.executeScript("arguments[0].click();", s);
-//                    break;
-//                }
-//                else
-//                {
-//                    System.out.println("inside else statement"+ j);
-//                    j=j+1;
-//                }
-//            }
-
-//                .pollingEvery(Duration.of(500, MILLIS))
-//                .withTimeout(Duration.of(10, SECONDS))
-//                .withMessage("not found");
-//        WebElement element = fluentWait.until(webDriver -> webDriver.findElement(By.xpath("...")));
-//        element.sendKeys("some text");
-//        Actions act =  new Actions(driver);
-//        act.moveToElement(s.click());
 
     }
 }
